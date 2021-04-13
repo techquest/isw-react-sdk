@@ -14,28 +14,42 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
   function initializePayment(): void {
     if (error) {
       console.error('Could not load Interswitch inline payment method')
+      return
+    }
+
+    if (
+      paymentOptions.mode.toLowerCase() !== 'test' &&
+      paymentOptions.mode.toLowerCase() !== 'live'
+    ) {
+      console.error('Unrecognized payment mode.')
+      return
     }
 
     if (!paymentOptions.reference || paymentOptions.reference.length < 6) {
       console.error(
         'Reference is required and must be at least 6 characters long'
       )
+      return
     }
 
     if (!paymentOptions.merchantCode) {
       console.error('Merchant code is required')
+      return
     }
 
     if (!paymentOptions.payItemID) {
       console.error('Pay Item ID is required')
+      return
     }
 
     if (!paymentOptions.redirectURL) {
       console.error('Redirect URL is required')
+      return
     }
 
     if (!paymentOptions.callback) {
       console.error('Callback is required')
+      return
     }
 
     if (loaded) {

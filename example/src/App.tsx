@@ -11,7 +11,7 @@ const App = () => {
     redirectURL: 'http://localhost:3000',
     text: 'Pay Now',
     mode: 'TEST',
-    reference: 'sdf89sdf',
+    reference: Date.now().toString(),
     amount: '10000',
 
     payItemName: 'Suya',
