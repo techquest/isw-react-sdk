@@ -7,23 +7,21 @@ const App = () => {
   const props = {
     merchantCode: 'MX26070',
     payItemID: 'Default_Payable_MX26070',
-    customerEmail: 'toyosi@gmail.com',
+    customerEmail: 'johndoe@gmail.com',
     redirectURL: 'http://localhost:3000',
     text: 'Pay Now',
     mode: 'TEST',
     reference: Date.now().toString(),
     amount: '10000',
-
-    payItemName: 'Suya',
-    customerName: 'Toyosi Oyelayo',
-    customerID: '1',
-    className: 'btn',
-    currency: '566',
     style: {
-      backgroundColor: 'red'
+      width: '200px',
+      height: '40px',
+      border: 'none',
+      color: '#fff',
+      backgroundColor: '#ff0000'
     },
     callback: (response: any) => {
-      console.log('hh: ', response)
+      console.log('response: ', response)
     }
   }
   return <Interswitch {...props} />

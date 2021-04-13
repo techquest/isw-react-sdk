@@ -34,7 +34,8 @@ const App = () => {
         width: '200px',
         height: '40px',
         border: 'none',
-        color: '#fff'
+        color: '#fff',
+        backgroundColor: '#ff0000'
     },
     callback: (response) => {
       console.log('response: ', response)
@@ -88,7 +89,7 @@ After a transaction, a sample response from the callback function will be like s
 }
 ```
 **NOTE:**
-The key 'resp' gives the final status of the transaction. 
+The key 'resp' gives the final status of the transaction.  
 There are quite a number of response codes that can be returned, the full list can be viewed [here](https://sandbox.interswitchng.com/docbase/docs/webpay/response-codes/)
 
 ## - Handling the Response 
