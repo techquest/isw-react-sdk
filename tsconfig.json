@@ -8,29 +8,35 @@
       "es2016",
       "es2017",
       "esnext"
-    ],                 
-    "allowJs": false,    
+    ],
+    "allowJs": false,
     "jsx": "react",
-    "declaration": true,   
-    "sourceMap": true,   
-    "outDir": "./dist", 
-    "noEmit": true,  
-    "isolatedModules": true,  
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noEmit": true,
+    "isolatedModules": true,
     "suppressImplicitAnyIndexErrors": true,
-    "strict": true,                      
-    "noImplicitAny": true,           
-    "strictNullChecks": true,       
-    "noImplicitThis": true, 
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
     "skipLibCheck": true,
-    "noUnusedLocals": true,    
-    "noUnusedParameters": true,   
-    "noImplicitReturns": true,     
-    "moduleResolution": "node", 
-    "allowSyntheticDefaultImports": true, 
-    "esModuleInterop": true,     
-    "forceConsistentCasingInFileNames": true 
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "example"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "example"
+  ]
 }
-

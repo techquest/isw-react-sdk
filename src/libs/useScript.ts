@@ -35,7 +35,6 @@ export default function useScript(mode: string): boolean[] {
     script.addEventListener('error', onScriptError)
 
     document.body.appendChild(script)
-
     return () => {
       script.removeEventListener('load', onScriptLoad)
       script.removeEventListener('complete', onScriptLoad)
