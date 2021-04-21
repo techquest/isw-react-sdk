@@ -10,7 +10,7 @@ To begin, create an account at https://business.quickteller.com if you haven't a
 ## Installation
 To install, run:
 ```bash
-npm install @interswitch/react-interswitch
+npm install react-interswitch
 ```
 
 ## Usage
