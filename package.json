@@ -1,7 +1,7 @@
 {
-  "name": "react-interswitch-test",
+  "name": "react-interswitch",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "React package for integrating to Quickteller Business to recieve payments.",
   "author": "Interswitch Group",
   "license": "MIT",
   "repository": "techquest/isw-react-sdk",
