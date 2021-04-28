@@ -66,7 +66,7 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
         txn_ref: paymentOptions.transactionReference,
         currency: paymentOptions.currency || '566',
         pay_item_name: paymentOptions.payItemName,
-        cust_name: paymentOptions.customerName,
+        cust_name: paymentOptions.customerName || '',
         cust_email: paymentOptions.customerEmail,
         cust_id: paymentOptions.customerID
       }
