@@ -18,7 +18,7 @@ Create your component like so:
 ```js
 import React from 'react'
 
-import { Interswitch } from 'react-interswitch'
+import { InterswitchPay } from 'react-interswitch'
 
 const App = () => {
   const paymentParameters = {
@@ -41,7 +41,7 @@ const App = () => {
       console.log('response: ', response)
     }
   }
-  return <Interswitch {...paymentParameters} />
+  return <InterswitchPay {...paymentParameters} />
 }
 
 export default App
