@@ -1,5 +1,5 @@
 import React from 'react'
-import Interswitch from '../Interswitch'
+import Interswitch from '../InterswitchPay'
 import { cleanup, fireEvent, render } from '@testing-library/react'
 import { params } from '../test-params'
 describe('<Interswitch />', () => {

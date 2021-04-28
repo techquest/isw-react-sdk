@@ -25,9 +25,12 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
       return
     }
 
-    if (!paymentOptions.reference || paymentOptions.reference.length < 6) {
+    if (
+      !paymentOptions.transactionReference ||
+      paymentOptions.transactionReference.length < 6
+    ) {
       console.error(
-        'Reference is required and must be at least 6 characters long'
+        'Transaction reference is required and must be at least 6 characters long'
       )
       return
     }
@@ -60,7 +63,7 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
         site_redirect_url: paymentOptions.redirectURL,
         onComplete: paymentOptions.callback,
         mode: paymentOptions.mode || 'TEST',
-        txn_ref: paymentOptions.reference,
+        txn_ref: paymentOptions.transactionReference,
         currency: paymentOptions.currency || '566',
         pay_item_name: paymentOptions.payItemName,
         cust_name: paymentOptions.customerName,

@@ -5,7 +5,7 @@ export const params = {
   redirectURL: 'http://localhost:3000',
   text: 'Pay Now',
   mode: 'TEST',
-  reference: Date.now().toString(),
+  transactionReference: Date.now().toString(),
   amount: '10000',
   style: {
     width: '200px',

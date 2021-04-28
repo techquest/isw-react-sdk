@@ -28,7 +28,7 @@ const App = () => {
     redirectURL: 'http://localhost:3000',
     text: 'Pay Now',
     mode: 'TEST',
-    reference: Date.now().toString(),
+    transactionReference: Date.now().toString(),
     amount: '10000',
     style: {
         width: '200px',
@@ -61,7 +61,7 @@ Below is a list of all the supported parameters.
 | payItemID            | string                   |  true    | This can be found on your dashboard.
 | customerEmail        | string                   | true     | The email of the person making the payment.                                                                                                                                                                                                         |
 | amount               | string                    | true     | The cost of the item being paid for in kobo.                                                                                                                                                                                                        |
-| reference | string                    | true    | This is a unique reference string required for every transaction. You can create a method to generate this. |
+| transactionReference | string                    | true    | This is a unique reference string required for every transaction. You can create a method to generate this. |
 | text      | string                    |  true   |  This represents the text on the payment button.
 | mode      | string                    | true    | This represents your integration mode. It can be 'TEST' or 'LIVE'.
 | callback  | function                  | true    | This function is called after every transaction.

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Interswitch } from 'react-interswitch'
+import { InterswitchPay } from 'react-interswitch'
 import 'react-interswitch/dist/index.css'
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
     redirectURL: 'http://localhost:3000',
     text: 'Pay Now',
     mode: 'TEST',
-    reference: Date.now().toString(),
+    transactionReference: Date.now().toString(),
     amount: '10000',
     style: {
       width: '200px',
@@ -24,7 +24,7 @@ const App = () => {
       console.log('response: ', response)
     }
   }
-  return <Interswitch {...props} />
+  return <InterswitchPay {...props} />
 }
 
 export default App

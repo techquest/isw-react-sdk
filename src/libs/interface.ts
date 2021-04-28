@@ -6,7 +6,7 @@ export interface IInterswitch {
   amount: string
   customerEmail: string
   mode: string
-  reference: string
+  transactionReference: string
   callback: Function
   currency?: string
   redirectURL?: string

@@ -2,7 +2,7 @@ import React from 'react'
 import { IInterswitch } from './interface'
 import useInterswitch from './useInterswitch'
 
-const Interswitch = (paymentParameters: IInterswitch): JSX.Element => {
+const InterswitchPay = (paymentParameters: IInterswitch): JSX.Element => {
   const initializePayment = useInterswitch(paymentParameters)
   return (
     <button
@@ -15,4 +15,4 @@ const Interswitch = (paymentParameters: IInterswitch): JSX.Element => {
   )
 }
 
-export default Interswitch
+export default InterswitchPay
