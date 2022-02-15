@@ -17,6 +17,7 @@ npm install react-interswitch
 
 ## Usage
 
+
 Create your component like so:
 
 ```js
