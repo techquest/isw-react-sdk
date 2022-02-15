@@ -10,7 +10,8 @@ export interface IInterswitch {
   callback: Function
   currency?: string
   redirectURL?: string
-  customerName?: string
+  customerName?: string,
+  customerMobileNo?: string,
   customerID?: string
   className?: string
   children?: ReactNode

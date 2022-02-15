@@ -68,7 +68,8 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
         pay_item_name: paymentOptions.payItemName,
         cust_name: paymentOptions.customerName || '',
         cust_email: paymentOptions.customerEmail,
-        cust_id: paymentOptions.customerID
+        cust_id: paymentOptions.customerID,
+        cust_mobile_no: paymentOptions.customerMobileNo || ''
       }
       window.webpayCheckout(_paymentOptions)
     }
