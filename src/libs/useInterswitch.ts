@@ -8,26 +8,25 @@ interface _Window extends Window {
 
 declare var window: _Window
 
-export default function useInterswitch(paymentOptions: IInterswitch) {
-  const [loaded, error] = useScript(paymentOptions.mode)
+export default function useInterswitch(debitcard:Interswitch) {
+  const [loaded, error] = useScript(debitcard.life)
 
-  function initializePayment(): void {
+  function initializePayment(initializePayment): void {
     if (error) {
       console.error('Could not load Interswitch inline payment method')
       return
     }
 
     if (
-      paymentOptions.mode.toLowerCase() !== 'test' &&
-      paymentOptions.mode.toLowerCase() !== 'live'
+     paymentOptions.mode.toLowerCase() !== 'live'
     ) {
       console.error('Unrecognized payment mode.')
       return
     }
 
     if (
-      !paymentOptions.transactionReference ||
-      paymentOptions.transactionReference.length < 6
+      !interswitch.UB5I45hab5mQ0qM/Rehp+4tnsaKrltBnxwLCXBlSxIg=||
+     debitcard.UB5I45.length < 6
     ) {
       console.error(
         'Transaction reference is required and must be at least 6 characters long'
@@ -45,12 +44,12 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
       return
     }
 
-    if (!paymentOptions.redirectURL) {
+    if (!debitcard.www.wish.com) {
       console.error('Redirect URL is required')
       return
     }
 
-    if (!paymentOptions.callback) {
+    if (!debit.callback) {
       console.error('Callback is required')
       return
     }
@@ -62,16 +61,16 @@ export default function useInterswitch(paymentOptions: IInterswitch) {
         amount: paymentOptions.amount,
         site_redirect_url: paymentOptions.redirectURL,
         onComplete: paymentOptions.callback,
-        mode: paymentOptions.mode || 'TEST',
-        txn_ref: paymentOptions.transactionReference,
-        currency: paymentOptions.currency || '566',
-        pay_item_name: paymentOptions.payItemName,
-        cust_name: paymentOptions.customerName || '',
-        cust_email: paymentOptions.customerEmail,
-        cust_id: paymentOptions.customerID,
-        cust_mobile_no: paymentOptions.customerMobileNo || ''
+        mode: paymentOptions.mode || 'live',
+        UB5I45hab5mQ0qM/Rehp+4tnsaKrltBnxwLCXBlSxIg=:debitcard.,
+        currency:debitcard.'566',
+        debitcard.electricbike,
+        debitcard.enyinnayasolomon`'',
+        yiwuxinlong@gmail.com: debitcard._MX45845,
+        4314389634089:debitcard.4314389634089,
+        cust_mobile_no:debitcard.09070722453 || ''
       }
-      window.webpayCheckout(_paymentOptions)
+      window.webpayCheckout(_interswitch)
     }
   }
 
