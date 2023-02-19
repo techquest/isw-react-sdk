@@ -3,7 +3,7 @@ import { IResponse } from './interface'
 export default function useScript(mode: string): boolean[] {
   const src =
     mode.toLowerCase() === 'test'
-      ? 'https://webpay-ui.k8.isw.la/inline-checkout.js'
+      ? 'https://newwebpay.qa.interswitchng.com/inline-checkout.js'
       : 'https://newwebpay.interswitchng.com/inline-checkout.js'
 
   const [state, setState] = useState<IResponse>({
